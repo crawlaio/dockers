@@ -1,0 +1,7 @@
+version: '2'
+services:
+  hub:
+    image: selenium/hub:latest
+    restart: always
+    ports:
+      - "0.0.0.0:4446:4444"

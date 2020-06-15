@@ -1,0 +1,11 @@
+version: "3"
+
+services:
+  scrapyd:
+    build:
+      context: .
+    container_name: scrapyd
+    image: sitoi/scrapyd:latest
+    restart: always
+    ports:
+      - "6800:6800"

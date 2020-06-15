@@ -1,0 +1,11 @@
+version: "3"
+
+services:
+  scrapydweb:
+    build:
+      context: .
+    container_name: scrapydweb
+    image: sitoi/scrapydweb:latest
+    restart: always
+    ports:
+      - "8001:8001"

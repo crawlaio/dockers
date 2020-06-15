@@ -1,0 +1,10 @@
+version: "3"
+
+services:
+  scrapyd:
+    build:
+      context: .
+    image: sitoi/scrapyd:on-build
+    restart: always
+    ports:
+      - "6800:6800"

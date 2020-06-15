@@ -1,0 +1,10 @@
+version: "3"
+
+services:
+  scrapydweb:
+    build:
+      context: .
+    image: sitoi/scrapydweb:on-build
+    restart: always
+    ports:
+      - "8001:8001"

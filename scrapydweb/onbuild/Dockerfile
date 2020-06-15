@@ -1,0 +1,1 @@
+FROM sitoi/scrapydweb:on-build

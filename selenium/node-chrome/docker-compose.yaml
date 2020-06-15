@@ -1,0 +1,11 @@
+version: '2'
+services:
+  chrome:
+    image: selenium/node-chrome:latest
+    restart: always
+    environment:
+      - HUB_HOST=10.10.2.22
+      - HUB_PORT=4446
+      - REMOTE_HOST=http://10.10.10.10:8855
+    ports:
+      - 0.0.0.0:8855:5555

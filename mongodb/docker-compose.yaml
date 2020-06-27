@@ -8,4 +8,5 @@ services:
 #      - /data/backup:/data/backup
 #      - /data/configdb:/data/configdb
     ports:
+      - 27017:27017
 

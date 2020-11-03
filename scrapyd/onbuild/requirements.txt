@@ -2,11 +2,10 @@ requests
 pymongo
 kafka-python
 scrapy-redis
-redis-py-cluster==1.3.6
-redis==2.10.6
+redis
 txredisapi
 brotlipy
-Twisted==18.9.0
+Twisted
 pymysql
 w3lib
 selenium

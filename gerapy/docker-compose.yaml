@@ -1,0 +1,9 @@
+version: "3"
+
+services:
+  gerapy:
+    image: germey/gerapy:latest
+    container_name: gerapy
+    restart: always
+    ports:
+      - "8000:8000"

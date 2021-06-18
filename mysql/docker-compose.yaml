@@ -1,0 +1,17 @@
+version: '3'
+services:
+  mysql:
+    restart: always
+    image: mysql:latest
+    container_name: mysql
+#    volumes:
+#      - ./mydir:/mydir
+#      - ./datadir:/var/lib/mysql
+#      - ./conf/my.cnf:/etc/mysql/my.cnf
+#      - ./docker/mysql/source:/docker-entrypoint-initdb.d
+    environment:
+      - "MYSQL_ROOT_PASSWORD=admin"
+      - "MYSQL_DATABASE=mydb"
+      - "TZ=Asia/Shanghai"
+    ports:
+      - 3306:3306

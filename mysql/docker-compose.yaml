@@ -4,11 +4,11 @@ services:
     restart: always
     image: mysql:latest
     container_name: mysql
-#    volumes:
-#      - ./mydir:/mydir
-#      - ./datadir:/var/lib/mysql
-#      - ./conf/my.cnf:/etc/mysql/my.cnf
-#      - ./docker/mysql/source:/docker-entrypoint-initdb.d
+    volumes:
+      - ~/dkvl/mysql/mydir:/mydir
+      - ~/dkvl/mysql/datadir:/var/lib/mysql
+      - ~/dkvl/mysql/conf/my.cnf:/etc/mysql/my.cnf
+      - ~/dkvl/mysql/docker/mysql/source:/docker-entrypoint-initdb.d
     environment:
       - "MYSQL_ROOT_PASSWORD=admin"
       - "MYSQL_DATABASE=mydb"

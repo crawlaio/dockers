@@ -1,12 +1,13 @@
 version: '3'
 services:
   mongodb:
-    image: mongo:4.2.2
+    image: mongo:latest
     container_name: mongodb
     restart: always
     volumes:
-      - 'C:/dkvl/MongoDB/data/db:/data/db'
-      - 'C:/dkvl/MongoDB/data/backup:/data/backup'
-      - 'C:/dkvl/MongoDB/data/configdb:/data/configdb'
+      - ~/dkvl/mongodb/data/db:/data/db
+      - ~/dkvl/mongodb/data/backup:/data/backup
+      - ~/dkvl/mongodb/data/configdb:/data/configdb
     ports:
-      - 0.0.0.0:27017:27017
+      - 27017:27017
+
